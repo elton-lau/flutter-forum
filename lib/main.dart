@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:providerarch/locator.dart';
-import 'package:providerarch/ui/views/home_view.dart';
+
+import 'ui/views/login_view.dart';
 
 void main() {
   setUpLocator();
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(),
-      home: HomeView(),
+      home: LoginView(),
     );
   }
 }
