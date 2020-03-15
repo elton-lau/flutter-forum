@@ -6,12 +6,7 @@ import 'package:providerarch/ui/widgets/login_header.dart';
 import '../../viewmodels/login_view_model.dart';
 import '../shared/shared_style.dart';
 
-class LoginView extends StatefulWidget {
-  @override
-  _LoginViewState createState() => _LoginViewState();
-}
-
-class _LoginViewState extends State<LoginView> {
+class LoginView extends StatelessWidget {
   final TextEditingController controller = TextEditingController();
 
   @override
@@ -37,7 +32,7 @@ class _LoginViewState extends State<LoginView> {
                   var loginSuccess = await model.login(controller.text);
                   if (loginSuccess) {
                     // Navigate to the home page
-                    print('to home page');
+                    Navigator.pushNamed(context, '/');
                   }
                 },
               )

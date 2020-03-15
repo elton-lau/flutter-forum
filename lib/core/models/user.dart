@@ -17,15 +17,21 @@ class User {
     return User(
       id: json['id'],
       name: json['name'],
-      userName: json['userName'],
+      userName: json['username'],
     );
   }
+
+//  User.fromJson(Map<String, dynamic> json) {
+//    id = json['id'];
+//    name = json['name'];
+//    userName = json['username'];
+//  }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = Map<String, dynamic>();
     data['id'] = this.id;
     data['name'] = this.name;
-    data['userName'] = this.userName;
+    data['username'] = this.userName;
     return data;
   }
 }
