@@ -1,6 +1,7 @@
-# providerarch
+# flutter forum
 
-A new Flutter application.
+Cloned from FilledStack Provider Implementation Guide (https://www.filledstacks.com/post/flutter-architecture-my-provider-implementation-guide/) with updated source code.
+Chinese version please visit my Medium: 
 
 ## Getting Started
 
